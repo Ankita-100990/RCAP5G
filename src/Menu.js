@@ -8,7 +8,7 @@ import "./App.css";
 const Menu = () => {
   return (
     <>
-        hiii
+       <div className="container-fluid bg-primary text-white">RCAP5G</div>
 
     </>
   );

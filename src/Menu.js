@@ -1,9 +1,9 @@
 // import React from "react";
 import "./App.css";
-// import { NavLink } from "react-router-dom";
+//  import { NavLink } from "react-router-dom";
 
 import logo from "./Images/focus.png";
-
+import Profile from "./Component/Profile";
 
 const Menu = () => {
     return (
@@ -19,10 +19,24 @@ const Menu = () => {
 
                 <div className="p-2 container-fluid  text-white col-6  d-flex flex-row-reverse "
                  >
-                    <i class="material-icons " style={{marginRight :"20px"}}>account_circle</i>
-                     <i class="material-icons " style={{marginRight :"20px"}}>account_circle</i>
-                     <i class="material-icons " style={{marginRight :"20px"}}>account_circle</i>
-                     <i class="material-icons " style={{marginRight :"20px"}}>account_circle</i>
+{/*               
+<i class="material-icons " style={{marginRight :"20px"}}>
+                    account_circle  </i>  */}
+
+
+                    <Profile/>
+            
+                    <i class="material-icons " style={{marginRight :"20px"}}>
+                    notifications</i>
+
+                     <i class="material-icons " style={{marginRight :"20px"}}>
+                    apps</i>
+                     <i class="material-icons " style={{marginRight :"20px"}}>
+                   fullscreen</i> 
+                     <i class="material-icons " style={{marginRight :"20px"}}>
+                 search</i> 
+                  <i class="material-icons " style={{marginRight :"20px"}}>
+                group</i> 
                 </div>
             </div>
             </div>

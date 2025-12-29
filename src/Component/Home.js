@@ -1,0 +1,11 @@
+import React from 'react'
+import Profile from "./Profile.js"
+
+const Home = () => {
+  return (
+    <>
+{/* <Profile/> */}
+    </>
+  )
+}
+export default Home

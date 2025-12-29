@@ -57,12 +57,13 @@ const StyledMenu = styled((props) => (
                 backgroundColor: alpha(
                     theme.palette.common.white,
                     theme.palette.action.selectedOpacity,
+                   
 
                 ),
             },
         },
         ...theme.applyStyles('dark', {
-            color: theme.palette.grey[300],
+            color: theme.palette.common.white,
         }),
     },
 }));
@@ -109,17 +110,24 @@ export default function CustomizedMenus() {
                 <MenuItem onClick={handleClose} disableRipple >
 
                     <Box sx={{ textAlign: "center" }}>
-                        <Typography fontWeight="bold">Ankita Patel</Typography>
+                        <Typography >Jiyansh Patel</Typography>
                         <Typography >Software developer</Typography>
                         <Typography >Surat</Typography>
                     </Box>
                 </MenuItem>
+                <Divider
+                    sx={{
+                        bgcolor: "rgba(240, 229, 229, 0.93)",
+                        my: 10,
+                        width: "100%",
+                    }} />
                 <MenuItem onClick={handleClose} disableRipple >
 
                     <PermIdentityIcon />
 
                     My Profile
                 </MenuItem>
+             
                 <MenuItem onClick={handleClose} disableRipple>
                     <LogoutRoundedIcon />
                     Logout

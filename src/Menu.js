@@ -4,6 +4,7 @@ import "./App.css";
 
 import logo from "./Images/focus.png";
 import Profile from "./Component/Profile";
+import Notification from "./Component/Notification";
 
 const Menu = () => {
     return (
@@ -25,9 +26,9 @@ const Menu = () => {
 
 
                     <Profile/>
-            
-                    <i class="material-icons " style={{marginRight :"20px"}}>
-                    notifications</i>
+            <Notification/>
+                    {/* <i class="material-icons " style={{marginRight :"20px"}}>
+                    notifications</i> */}
 
                      <i class="material-icons " style={{marginRight :"20px"}}>
                     apps</i>

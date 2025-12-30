@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
@@ -8,6 +8,10 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
 
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -43,11 +47,20 @@ export default function CustomizedDialogs() {
                 aria-labelledby="customized-dialog-title"
                 open={open}
             >
-                <DialogTitle sx={{ m: 0, p: 2,backgroundColor: "#03235fff", color: 'white',  }} id="customized-dialog-title">
+                <DialogTitle sx={{ m: 0, p: 2, backgroundColor: "#03235fff", color: 'white', }} id="customized-dialog-title">
                     Notifications
-
-
                 </DialogTitle>
+
+
+                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                    <Tabs>
+                        <Tab label="User Generated" />
+                        <Tab label="System Generated" />
+
+                    </Tabs>
+                </Box>
+
+
                 <IconButton
                     aria-label="close"
                     onClick={handleClose}
@@ -61,6 +74,8 @@ export default function CustomizedDialogs() {
                     })}
                 >
                     <CloseIcon />
+
+
                 </IconButton>
                 <DialogContent dividers>
                     <Typography gutterBottom>
@@ -69,9 +84,15 @@ export default function CustomizedDialogs() {
 
                 </DialogContent>
                 <DialogActions>
-                    <Button autoFocus onClick={handleClose}>
-                        Viewed
-                    </Button>
+
+
+
+
+
+                    <Link href="https://example.com" target="_blank" underline="hover" autoFocus onClick={handleClose}>
+                        View
+                    </Link>
+
                 </DialogActions>
             </BootstrapDialog>
         </React.Fragment>

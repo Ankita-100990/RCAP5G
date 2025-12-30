@@ -65,7 +65,7 @@ const StyledMenu = styled((props) => (
         ...theme.applyStyles('dark', {
             color: theme.palette.common.white,
         }),
-    },
+    }
 }));
 
 export default function CustomizedMenus() {

@@ -5,6 +5,7 @@ import "./App.css";
 import logo from "./Images/focus.png";
 import Profile from "./Component/Profile";
 import Notification from "./Component/Notification";
+import Searchicon from "./Component/Searchicon";
 
 const Menu = () => {
     return (
@@ -34,8 +35,14 @@ const Menu = () => {
                     apps</i>
                      <i class="material-icons " style={{marginRight :"20px"}}>
                    fullscreen</i> 
-                     <i class="material-icons " style={{marginRight :"20px"}}>
-                 search</i> 
+                     {/* <i class="material-icons " style={{marginRight :"20px"}} >
+                 search </i>  */}
+
+ <Searchicon/>
+
+
+
+
                   <i class="material-icons " style={{marginRight :"20px"}}>
                 group</i> 
                 </div>

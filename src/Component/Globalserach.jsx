@@ -1,11 +1,13 @@
-import { Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 import React, { useState } from 'react';
 
 import { TextField, MenuItem } from '@mui/material';
-// import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from '@mui/icons-material/Search';
 // import { buildQueries } from '@testing-library/dom';
 // import { BluetoothAudio } from '@mui/icons-material';
 import { Box, Paper } from '@mui/material';
+import { Button } from "@mui/material";
+
 
 const Globalserach = () => {
 
@@ -16,7 +18,8 @@ const Globalserach = () => {
     const handleSearch = () => {
         console.log({
             Portfolio,
-            Client
+            Client,
+            trackingNo
         });
     };
 
@@ -34,7 +37,7 @@ const Globalserach = () => {
                 }}
             >
                 <Paper sx={{ width: 500, backgroundColor: '#03235fff', color: 'white', p: 2, margin: 3 }}>
-                    Global Search content
+                    Global Search
                 </Paper>
             </Box>
             {/* <Typography sx={{ mb: 5, backgroundColor: "#03235fff", color: 'white', fontSize: 30, justifyContent: center }}>
@@ -79,8 +82,29 @@ const Globalserach = () => {
                 </Grid>
 
 
+                <Grid item xs={6} md={6}>
+                    <TextField
+                        fullWidth
+                        label="tracking Number / Customer Name / Mobile Nmuber"
+                        // value={trackingNo}
+                      onChange={(e) => setTrackingNO(e.target.value)}
+                        required
+                    />
 
 
+
+                </Grid>
+                <Grid item xs={12} md={2}>
+                    <Button
+                        fullWidth
+                        variant="contained"
+                        startIcon={<SearchIcon />}
+                        sx={{ height: "56px", bgcolor: "#2c3e9f" }}
+                        
+                        onClick={handleSearch}>
+                        Search
+                    </Button>
+                </Grid>
 
             </Grid>
         </>
